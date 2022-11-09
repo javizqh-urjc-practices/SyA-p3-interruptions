@@ -19,7 +19,7 @@ while True:
 ```
 
 #### Our feedback:
-
+When we tested this, the problem we had was that when we pressed to fast only one print() was executed.
 ### Second method (Using wait_for_edge)
 In this implementation, the while loop still remains, but instead of asking nonstop, we wait until the state of the button is the desired state, in this case it would be when we release the button.
 ```python
@@ -48,7 +48,7 @@ signal.signal(signal.SIGINT, callbackSalir) # callback para CTRL+C
 signal.pause() # esperamos por hilo/callback CTRL+C antes de acabar
 ```
 #### Our feedback:
-
+The issue here was the same one we had in the [first implementation](#first-method-asking-the-input-nonstop). Outside of that, the rest was flawless.
 ## Excercises
 ### Excercise 1
 This first excercise was pretty simple, because the things that we were asked to change were already implemented in the [first method](#first-method-asking-the-input-nonstop). So we copied that features into our code:
@@ -66,3 +66,9 @@ while True:
     sleep(0.1) # sleep is used in order to allow the correct use of Ctrl+C 
 ```
 ### Excercise 2
+
+#### 1
+
+#### 2
+
+#### 3
