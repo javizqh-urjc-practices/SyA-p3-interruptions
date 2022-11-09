@@ -18,7 +18,7 @@ if __name__ == '__main__':
     GPIO.setup(pulsadorGPIO, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
     GPIO.add_event_detect(pulsadorGPIO, GPIO.FALLING, 
-      callback=callbackBotonPulsado, bouncetime=500) # expresado en ms.
+    callback=callbackBotonPulsado, bouncetime=500) # expresado en ms.
     
     signal.signal(signal.SIGINT, callbackSalir) # callback para CTRL+C
     signal.pause() # esperamos por hilo/callback CTRL+C antes de acabar

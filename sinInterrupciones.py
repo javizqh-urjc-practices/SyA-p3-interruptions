@@ -17,7 +17,7 @@ if __name__ == '__main__':
 
     while True:
         if not GPIO.input(pulsadorGPIO): # la lectura siempre da 1 (HIGH/True) excepto al pulsar,
-                                         # y solo en ese instante, que da 0 (LOW/False)
+                                        # y solo en ese instante, que da 0 (LOW/False)
             if not pulsado: # con esta variable evitamos considerar más de una vez una pulsación;
                             # puede que se lea +1 vez el estado del pin antes de cambiar su estado
                             # Este fenómeno se conoce como rebote (o bounce). Algunas funciones

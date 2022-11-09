@@ -51,4 +51,18 @@ signal.pause() # esperamos por hilo/callback CTRL+C antes de acabar
 
 ## Excercises
 ### Excercise 1
+This first excercise was pretty simple, because the things that we were asked to change were already implemented in the [first method](#first-method-asking-the-input-nonstop). So we copied that features into our code:
+```python
+pulsado = False
+
+while True:
+    if (GPIO.wait_for_edge(pulsadorGPIO, GPIO.RISING)):
+    if not pulsado: # assures that only consider one pulse
+        print("El boton se ha pulsado")
+        pulsado = True
+    else:
+    pulsado = False
+    
+    sleep(0.1) # sleep is used in order to allow the correct use of Ctrl+C 
+```
 ### Excercise 2
