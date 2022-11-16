@@ -68,7 +68,11 @@ while True:
 ### Excercise 2
 
 #### 1
-
+In this one we simply added an else if condition to check if the green button is pressed, also if both buttons are not pressed we added an else statement to turn both led off.
 #### 2
+We didn't managed to implement this excercise. Our approach was to connect the wires of the green and the red buttons to a single one in order to detect that a button has been pushed but it didn't worked because it only detected the red button whenever we pressed a button.
+
+The approach we were asked to implement was not as optimal as the next approach wich is better and doesn't have any of the issues that this approach have.
 
 #### 3
+This excercise was as easy as the first one, we just added another callback but for the green button. Then in order to turn off the button when not pressed we added an else if statement to choose between on and off.
